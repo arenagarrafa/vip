@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Arena Garrafa — Área VIP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Cardápio da Área VIP — Arena Garrafa" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       TELA INICIAL — marca + um botão para cada categoria
+       (os botões são gerados a partir do menu.js)
+       ============================================================ -->
+  <section id="tela-inicio" class="tela tela--inicio">
+
+    <header class="marca">
+      <img id="logo" class="marca__logo" src="assets/logo-arena.png" alt="Arena Garrafa" />
+      <p id="logo-fallback" class="marca__nome" hidden>ARENA <span>GARRAFA</span></p>
+      <p class="marca__vip">★ ÁREA VIP ★</p>
+    </header>
+
+    <nav id="lista-categorias" class="categorias" aria-label="Categorias do cardápio">
+      <!-- botões gerados por script.js -->
+    </nav>
+
+    <footer class="rodape">
+      <span>📷 @arena.garrafa</span>
+      <span>📍 Povoado Santa Luz de Baixo</span>
+    </footer>
+
+  </section>
+
+  <!-- ============================================================
+       TELA DE CATEGORIA — itens e preços + botão voltar
+       ============================================================ -->
+  <section id="tela-categoria" class="tela tela--categoria" hidden>
+
+    <header class="topo-categoria">
+      <button id="botao-voltar" class="botao-voltar" type="button" aria-label="Voltar às categorias">
+        ‹ Voltar
+      </button>
+      <h1 id="titulo-categoria" class="titulo-categoria">Categoria</h1>
+    </header>
+
+    <div id="lista-itens" class="itens">
+      <!-- itens gerados por script.js -->
+    </div>
+
+    <footer class="rodape rodape--categoria">
+      <span>📷 @arena.garrafa</span>
+    </footer>
+
+  </section>
+
+  <script src="menu.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

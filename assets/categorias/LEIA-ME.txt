@@ -1,0 +1,17 @@
+COLOQUE AQUI AS FOTOS DAS CATEGORIAS
+==================================================================
+Use exatamente estes nomes (definidos no menu.js). A foto vira a
+miniatura redonda do botão na tela inicial. Enquanto o arquivo não
+existir, o botão mostra o emoji — nada quebra.
+
+  baldes.jpg      -> Cervejas no Balde — Long Neck (5 un)
+  torres.jpg      -> Cervejas Torre
+  canecas.jpg     -> Canecas 330 ml
+  sem-alcool.jpg  -> Bebidas sem Álcool
+  doses.jpg       -> Bebidas / Doses
+  drinks.jpg      -> Drinks
+  tira-gosto.jpg  -> Tira Gosto
+
+DICA: fotos quadradas (ex.: 300x300) ficam melhores — a miniatura
+é redonda e recorta o centro da imagem. Pode usar .jpg ou .png
+(se usar .png, ajuste a terminação do nome no menu.js).

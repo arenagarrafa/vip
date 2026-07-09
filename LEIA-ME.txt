@@ -1,0 +1,50 @@
+ARENA GARRAFA — ÁREA VIP (cardápio para celular)
+==================================================================
+Cardápio digital estático, feito para o cliente abrir NO CELULAR:
+tela inicial com um botão por categoria; ao tocar, mostra os itens
+e preços daquela categoria. HTML, CSS e JavaScript puros.
+
+ARQUIVOS
+  index.html  -> estrutura (não precisa editar)
+  style.css   -> aparência (não precisa editar)
+  script.js   -> funcionamento (não precisa editar)
+  menu.js     -> AQUI você edita itens, preços e categorias
+  assets/
+    logo-arena.png  -> logo exibida no topo da tela inicial
+    categorias/     -> FOTOS dos botões (veja o LEIA-ME de lá)
+
+COMO ATUALIZAR O CARDÁPIO
+  Edite somente o menu.js:
+    - trocar um preço: altere o campo "preco" do item
+    - adicionar item: copie uma linha { nome: ..., preco: ... }
+    - nova categoria: copie um bloco inteiro { categoria: ... }
+      (ela vira automaticamente um novo botão na tela inicial)
+
+LOGO E FOTOS
+  - Logo: já está em assets/logo-arena.png. Para trocar, basta
+    substituir o arquivo (PNG com fundo transparente fica melhor).
+    Sem o arquivo, aparece o nome em texto — nada quebra.
+  - Fotos das categorias: coloque em assets/categorias/ com os
+    nomes já definidos (baldes.jpg, torres.jpg, canecas.jpg,
+    sem-alcool.jpg, doses.jpg, drinks.jpg, tira-gosto.jpg).
+    A foto vira a miniatura redonda do botão; sem a foto, o
+    botão mostra o emoji.
+
+COMO PUBLICAR NO GITHUB (GitHub Pages)
+  1. Crie um repositório no github.com (ex.: cardapio-vip).
+  2. Envie os arquivos desta pasta para o repositório
+     (index.html precisa ficar na RAIZ do repositório).
+  3. No repositório: Settings -> Pages -> em "Branch" escolha
+     "main" e pasta "/ (root)" -> Save.
+  4. Em ~1 minuto o cardápio fica no ar em:
+     https://SEU-USUARIO.github.io/cardapio-vip/
+  5. Gere um QR Code desse link (ex.: qr-code-generator.com) e
+     deixe nas mesas da Área VIP.
+
+  Para atualizar preços depois: edite o menu.js no próprio GitHub
+  (ícone de lápis), salve (Commit) — o site atualiza sozinho.
+
+DICAS
+  - O link de cada categoria pode ser compartilhado direto,
+    ex.: .../cardapio-vip/#c1 abre a primeira categoria.
+  - O botão "voltar" do celular funciona normalmente.
