@@ -31,16 +31,16 @@
 const menu = [
 
   {
-    categoria: "Cervejas no Balde — Long Neck (5 un)",
+    categoria: "Cervejas no  — Long Neck (5 un)",
     icone: "🧊",
-    imagem: "assets/categorias/baldes.jpg",
+    imagem: "assets/categorias/s.jpg",
     itens: [
-      { nome: "Stella Artois Long Neck — Balde (5 un)", preco: "R$ 55,00" },
-      { nome: "Stella Artois Gold Long Neck — Balde (5 un)", preco: "R$ 60,00" },
-      { nome: "Budweiser Long Neck — Balde (5 un)", preco: "R$ 50,00" },
-      { nome: "Império Long Neck — Balde (5 un)", preco: "R$ 48,00" },
-      { nome: "Heineken Long Neck — Balde (5 un)", preco: "R$ 60,00" },
-      { nome: "Corona Long Neck — Balde (5 un)", preco: "R$ 60,00" }
+      { nome: "Stella Artois Long Neck —  (5 un)", preco: "R$ 55,00" },
+      { nome: "Stella Artois Gold Long Neck —  (5 un)", preco: "R$ 60,00" },
+      { nome: "Budweiser Long Neck - Balde (5 un)", preco: "R$ 50,00" },
+      { nome: "Império Long Neck - Balde (5 un)", preco: "R$ 48,00" },
+      { nome: "Heineken Long Neck - Balde (5 un)", preco: "R$ 60,00" },
+      { nome: "Corona Long Neck - Balde (5 un)", preco: "R$ 60,00" }
     ]
   },
 
@@ -121,7 +121,7 @@ const menu = [
       { nome: "Calabresa", preco: "R$ 20,00" },
       { nome: "Calabresa e Fritas", preco: "R$ 30,00" },
       { nome: "Filé com Fritas", preco: "R$ 40,00" },
-      { nome: "Filé — 300 g", preco: "R$ 45,00" },
+      { nome: "Filé - 300 g", preco: "R$ 45,00" },
       { nome: "Asinhas de Frango", preco: "R$ 20,00" },
       { nome: "Pastelzinho (8 un) Queijo/Carne", preco: "R$ 15,00" }
     ]
