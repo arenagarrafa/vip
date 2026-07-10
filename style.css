@@ -51,22 +51,34 @@ body {
 
 .tela[hidden] { display: none; }
 
+/* A TELA INICIAL não rola: altura travada na tela do celular e os
+   botões se ajustam para caber (a tela de categoria continua
+   rolando normalmente quando a lista é longa). */
+.tela--inicio {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  padding-top: 14px;
+}
+
 /* ----------------------------------------------------------------
    3. MARCA (tela inicial)
    ---------------------------------------------------------------- */
 .marca {
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 10px 0 24px;
+  padding: 0 0 14px;
 }
 
 /* Logo da Arena (assets/logo-arena.png). Se o arquivo faltar,
-   o nome em texto aparece automaticamente no lugar. */
+   o nome em texto aparece automaticamente no lugar. Altura em vh
+   para a tela inicial caber inteira em qualquer celular. */
 .marca__logo {
-  max-width: 240px;
-  max-height: 170px;
+  max-width: 200px;
+  max-height: clamp(70px, 13vh, 120px);
   object-fit: contain;
   filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.6));
 }
@@ -85,8 +97,8 @@ body {
 .marca__nome span { color: var(--dourado); }
 
 .marca__vip {
-  margin-top: 8px;
-  font-size: 15px;
+  margin-top: 6px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 6px;
   color: var(--dourado);
@@ -98,18 +110,20 @@ body {
    ---------------------------------------------------------------- */
 .categorias {
   flex: 1 1 auto;
+  min-height: 0;                  /* permite os botões encolherem p/ caber */
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: clamp(8px, 1.4vh, 14px);
 }
 
 .categoria-botao {
+  flex: 1 1 0;                    /* divide a altura igualmente entre os botões */
+  min-height: 48px;               /* nunca menor que um alvo de toque confortável */
   display: flex;
   align-items: center;
   gap: 16px;
   width: 100%;
-  min-height: 68px;               /* alvo confortável para o dedo */
-  padding: 14px 18px;
+  padding: 8px 18px;
   border: 1px solid var(--dourado-suave);
   border-radius: var(--raio);
   background: linear-gradient(180deg, #1d1d1d 0%, var(--preto-card) 100%);
@@ -129,7 +143,7 @@ body {
 }
 
 .categoria-botao__icone {
-  font-size: 30px;
+  font-size: clamp(22px, 3.4vh, 30px);
   flex: 0 0 auto;
 }
 
@@ -137,8 +151,8 @@ body {
    do emoji. Basta colocar o arquivo em assets/categorias/ com o
    nome definido no menu.js — sem foto, o emoji continua. */
 .categoria-botao__foto {
-  width: 52px;
-  height: 52px;
+  width: clamp(38px, 5.6vh, 52px);
+  height: clamp(38px, 5.6vh, 52px);
   flex: 0 0 auto;
   border-radius: 50%;
   object-fit: cover;
@@ -249,15 +263,19 @@ body {
    6. RODAPÉ
    ---------------------------------------------------------------- */
 .rodape {
-  padding-top: 26px;
+  flex: 0 0 auto;
+  padding-top: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
-  font-size: 14px;
+  gap: 4px;
+  font-size: 13px;
   color: var(--cinza);
   text-align: center;
 }
+
+/* Na tela de categoria (que rola), o rodapé respira um pouco mais */
+.rodape--categoria { padding-top: 26px; }
 
 /* ----------------------------------------------------------------
    7. ANIMAÇÃO DE ENTRADA (suave, leve para o celular)

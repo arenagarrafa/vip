@@ -46,7 +46,7 @@ const menu = [
 
   {
     categoria: "Cervejas Torre",
-    icone: "🗼",
+    icone: "🍻",
     imagem: "assets/categorias/torres.jpg",
     itens: [
       { nome: "Stella Artois Torre 1,5 L", preco: "R$ 65,00" },
